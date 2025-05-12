@@ -1,0 +1,12 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.responsive-text {
+  font-size: clamp(1rem, 5vw, 3rem); /* Adjusts between 1rem and 3rem based on viewport width */
+  text-align: center;
+  margin: 20px;
+}
