@@ -2,12 +2,22 @@ body{
   padding: 0;
   margin: 0;
 }
-.header{
-  background-color: rgb(231, 111, 81);
-  
-  
+.header {
+  background: linear-gradient(90deg, #0c046c 0%, hsl(197, 100%, 84%) 100%);
+  transition: background 0.5s ease;
 }
-.navbar
+.Name
+{ 
+  font-size: 22px;
+  color: #fff;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+
+}
+.header:hover {
+  background: linear-gradient(90deg, #a5e5ff 0%, #0c046c 100%);
+}
+.navbar 
 {
    display: flex;  
    justify-content: space-between;
@@ -23,4 +33,60 @@ body{
     margin-top: 30px;
     margin-right: 20px;
     
+}
+.nav-links a {
+  transition: color 0.3s, font-weight 0.3s, font-size 0.3s;
+  text-decoration: none;
+  color: rgb(68, 122, 222);
+}
+
+.nav-links a:hover
+{
+  color: rgb(245, 245, 245);
+  font-weight: bold;
+  font-size:22px;
+  text-decoration: none;
+}
+
+
+.title {
+  font-size: 24px;
+  align-items: start;
+  
+}
+
+.intro-wrapper {
+  background-image: url('images/bg-intro.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  padding: 60px 0; /* adds top & bottom spacing */
+}
+
+.intro {
+  display: flex;
+  
+  align-items: center;
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 650px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+  width: 60%;
+  padding-right: 20px;
+}
+
+.portfolio-image {
+  width:160px;
+  margin-left: 47px;
+  margin-right: 0;
+  border-radius: 10px;
+}
+.intro:hover {
+  
 }
