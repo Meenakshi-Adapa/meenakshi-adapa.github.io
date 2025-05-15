@@ -1,11 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FoodMart</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <h1>Hi its foodCart</h1>
+    <header>
+        <nav>
+            <div class="logo">
+<img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="FoodMart Logo" />
+            </div>
+
+            <div class="search-container">l
+                <div class="categories">
+                    <select>
+                        <option>All Categories</option>
+                        <option>Fruits</option>
+                        <option>Vegetables</option>
+                        <option>Dairy</option>
+                        <option>Snacks</option>
+                        <option>Bakery</option>
+                    </select>
+                </div>
+
+                <div class="search">
+                    <input type="text" placeholder="Search for more than 20,000 products" />
+                </div>
+            </div>
+
+            <div class="support">
+                <p>For Support?</p>
+                <strong>+980-34984089</strong>
+            </div>
+
+            <div class="icons">
+<img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="Account" />
+<img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Wishlist" />
+                <div class="cart">
+                    <span>Your Cart</span>
+                    <span class="price">$1290.00</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="secondary-nav">
+            <select>
+                <option>Shop by Department</option>
+                <option>Fruits</option>
+                <option>Vegetables</option>
+                <option>Dairy</option>
+                <option>Snacks</option>
+                <option>Bakery</option>
+            </select>
+
+            <ul>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Brand</a></li>
+                <li><a href="#">Sale</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+
+        <section class="promotions">
+            <div class="promo-item large smoothie">
+                <div class="promo-content">
+                    <p>100% Natural</p>
+                    <h2 style="font-size: 36px !important;">
+                        <strong>Fresh Smoothie &amp; Summer Juice</strong>
+                    </h2>
+                    <button>SHOP NOW</button>
+                </div>
+            </div>
+
+            <div class="promo-side">
+                <div class="promo-item small veggies">
+                    <p>20% Off</p>
+                    <p>
+                        <span class="separator"></span> <span class="sale-text">sale</span>
+                    </p>
+                    <h2> Fruits &amp; Vegetables</h2>
+                    <p>Shop Collection →</p>
+                </div>
+                <div class="promo-item small baked">
+                    <p>15% Off </p>
+                    <p>
+                        <span class="separator"></span> <span class="sale-text">sale</span>
+                    </p>
+                    <h2> Baked Products</h2>
+                    <p>Shop Collection →</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="shop-by-type">
+            <div class="type-header">
+                <h3>Category</h3>
+                <div class="right-controls">
+                    <h3 class="view-all">View All Categories</h3>
+                    <div class="type-nav">
+<img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="Previous" class="nav-arrow left" />
+<img src="https://cdn-icons-png.flaticon.com/512/271/271228.png" alt="Next" class="nav-arrow right" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="type-container">
+                <div class="type-item fruits">
+<img src="https://cdn-icons-png.flaticon.com/512/135/135620.png" alt="Fruits &amp; Vegetables" />
+                    <h2>Fruits &amp; Vegetables</h2>
+                </div>
+                <div class="type-item bakery">
+<img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Breads &amp; Sweets" />
+                    <h2>Breads &amp; Sweets</h2>
+                </div>
+                <div class="type-item drinks">
+<img src="https://cdn-icons-png.flaticon.com/512/3075/3075972.png" alt="Soft Drinks" />
+                    <h2>Soft Drinks</h2>
+                </div>
+                <div class="type-item alcohol">
+<img src="https://cdn-icons-png.flaticon.com/512/1046/1046790.png" alt="Wine &amp; Whiskey" />
+                    <h2>Wine &amp; Whiskey</h2>
+                </div>
+                <div class="type-item meat">
+<img src="https://cdn-icons-png.flaticon.com/512/1046/1046787.png" alt="Meat" />
+                    <h2>Meat</h2>
+                </div>
+                <div class="type-item supplements">
+<img src="https://cdn-icons-png.flaticon.com/512/1046/1046789.png" alt="Medicine &amp; Supplements" />
+                    <h2>Medicine &amp; Supplements</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="new-brands">
+            <div class="brands-header">
+                <h3>Newly Arrived Brands</h3>
+                <div class="right-controls">
+                    <h3 class="view-all">View All Brands</h3>
+                    <div class="brand-nav">
+                        <img src="images/chevron.png" alt="Previous" class="nav-arrow left" />
+                        <img src="images/next.png" alt="Next" class="nav-arrow right" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="brands-container">
+                <div class="brand-item">
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Amber Jar Honey" />
+                    <h2>Amber Jar Honey</h2>
+                    <p>Best nectar you wish to get</p>
+                </div>
+                <div class="brand-item">
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=400&q=80" alt="Herbs" />
+                    <h2>Fresh Aromatic Herbs</h2>
+                    <p>Handpicked for superior quality.</p>
+                </div>
+                <div class="brand-item">
+<img src="https://images.unsplash.com/photo-1542831371-d531d36971e6?auto=format&fit=crop&w=400&q=80" alt="tuna" />
+                    <h2>Premium Tuna Container</h2>
+                    <p>Fresh, high-quality tuna. </p>
+                </div>
+                <div class="brand-item">
+<img src="https://images.unsplash.com/photo-1542831371-d531d36971e6?auto=format&fit=crop&w=400&q=80" alt="hotz food" />
+                    <h2>HOTZ Food</h2>
+                    <p>flavors of traditional Polish cuisine</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="new-products">
+            <div class="products-header">
+                <h3>Trending Products</h3>
+                <div class="filter-options">
+                    <span class="filter-text">All</span>
+                    <span class="filter-text">Fruits &amp; Veggies</span>
+                    <span class="filter-text">Juices</span>
+                </div>
+            </div>
+
+            <section class="new-products">
+                <div class="products-container">
+                    <div class="product-card">
+<img src="https://cdn-icons-png.flaticon.com/512/415/415733.png" alt="Avocado" />
+                        <h2>Avocado</h2>
+                        <p>250g ⭐4.5</p>
+                        <p><b>₹50</b></p>
+                        <img src="images/wishlist.png" alt="Like" class="like-icon" />
+                    </div>
+                    <div class="product-card">
+<img src="https://cdn-icons-png.flaticon.com/512/415/415682.png" alt="Banana" />
+                        <h2>Banana</h2>
+                        <p>1kg ⭐4.2</p>
+                        <p><b>₹30</b></p>
+                        <img src="images/wishlist.png" alt="Like" class="like-icon" />
+                    </div>
+                    <div class="product-card">
+<img src="https://cdn-icons-png.flaticon.com/512/1046/1046781.png" alt="Biscuits" />
+                        <h2>Biscuits</h2>
+                        <p>200g ⭐4.0</p>
+                        <p><b>₹25</b></p>
+                        <img src="images/wishlist.png" alt="Like" class="like-icon" />
+                    </div>
+                    <div class="product-card">
+<img src="https://cdn-icons-png.flaticon.com/512/1046/1046783.png" alt="Coke" />
+                        <h2>Coke</h2>
+                        <p>500ml ⭐4.3</p>
+                        <p><b>₹40</b></p>
+                        <img src="images/wishlist.png" alt="Like" class="like-icon" />
+                    </div>
+                    <div class="product-card">
+<img src="https://cdn-icons-png.flaticon.com/512/415/415747.png" alt="Cucumber" />
+                        <h2>Cucumber</h2>
+                        <p>500g ⭐4.1</p>
+                        <p><b>₹15</b></p>
+                        <img src="images/wishlist.png" alt="Like" class="like-icon" />
+                    </div>
+                    <div class="product-card">
+<img src="https://cdn-icons-png.flaticon.com/512/1046/1046785.png" alt="Eggs" />
+                        <h2>Eggs</h2>
+                        <p>12pcs ⭐4.6</p>
+                        <p><b>₹60</b></p>
+                        <img src="images/wishlist.png" alt="Like" class="like-icon" />
+                    </div>
+                    <div class="product-card">
+<img src="https://cdn-icons-png.flaticon.com/512/1046/1046782.png" alt="Lays" />
+                        <h2>Lays</h2>
+                        <p>100g ⭐4.4</p>
+                        <p><b>₹20</b></p>
+                        <img src="images/wishlist.png" alt="Like" class="like-icon" />
+                    </div>
+                    <div class="product-card">
+<img src="https://cdn-icons-png.flaticon.com/512/1046/1046786.png" alt="Milk" />
+                        <h2>Milk</h2>
+                        <p>1L ⭐4.5</p>
+                        <p><b>₹50</b></p>
+                        <img src="images/wishlist.png" alt="Like" class="like-icon" />
+                    </div>
+                    <div class="product-card">
+<img src="https://cdn-icons-png.flaticon.com/512/1046/1046788.png" alt="Raspberries" />
+                        <h2>Raspberries</h2>
+                        <p>200g ⭐4.7</p>
+                        <p><b>₹70</b></p>
+                        <img src="images/wishlist.png" alt="Like" class="like-icon" />
+                    </div>
+                    <div class="product-card">
+<img src="https://cdn-icons-png.flaticon.com/512/1046/1046780.png" alt="Tomato Ketchup" />
+                        <h2>Tomato Ketchup</h2>
+                        <p>500g ⭐4.3</p>
+                        <p><b>₹35</b></p>
+                        <img src="images/wishlist.png" alt="Like" class="like-icon" />
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="info-section">
+            <div class="top-row">
+                <div class="branding">
+                    <img src="images/logo.png" alt="Foodmart Grocery Store" />
+                    <div class="social-icons">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
+<img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" />
+<img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" />
+<img src="https://cdn-icons-png.flaticon.com/512/733/733646.png" alt="YouTube" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="middle-row">
+                <div class="info-columns">
+                    <div class="column">
+                        <h3>Ultras</h3>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Conditions</li>
+                            <li>Our Journals</li>
+                            <li>Careers</li>
+                            <li>Affiliate Programme</li>
+                            <li>Ultras Press</li>
+                        </ul>
+                    </div>
+
+                    <div class="column">
+                        <h3>Customer Service</h3>
+                        <ul>
+                            <li>FAQ</li>
+                            <li>Contact</li>
+                            <li>Privacy Policy</li>
+                            <li>Returns &amp; Refunds</li>
+                            <li>Cookie Guidelines</li>
+                            <li>Delivery Information</li>
+                        </ul>
+                    </div>
+
+                    <div class="column">
+                        <h3>Available in</h3>
+                        <ul>
+                            <li>Delhi</li>
+                            <li>Maharashtra</li>
+                            <li>Karnataka</li>
+                            <li>Tamil Nadu</li>
+                            <li>West Bengal</li>
+                            <li>Gujarat</li>
+                            <li>Uttar Pradesh</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subscribe">
+                    <input type="email" placeholder="Enter your email" />
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
 </body>
 </html>
