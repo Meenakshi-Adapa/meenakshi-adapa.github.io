@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <input type="text" id="name" placeholder="num1">
-  <input type="text" id="name" placeholder="num1">
-  <script>
+<form id="form" action="index.html" method="post" onsubmit="display()">
+  <input type="email" placeholder="Enter your Mail" id="email" required />
+  <input type="password"  placeholder="Enter password" id="password" required />
+  <input type="submit" value="Submit"  />
+  
+</form>
+  <div id="output"></div>
 
+  <script>
+    function display() {
+      const name = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const outputDiv = document.getElementById('output');
+      outputDiv.innerHTML = `<h1>Email: ${name}</h1><h1>Password: ${password}</h1>`;
+    }
   </script>
 </body>
 </html>
