@@ -117,23 +117,27 @@ body{
 .projects{
   background-color: #008eb5;
   padding-bottom: 40px;
- 
+  overflow-x: auto;
 }
+
 .heading-projects{
   text-align: center;
   font-size: 32px;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  padding-top: 20px;
+  font-family:'Trebuchet MS', 'Lucida';
   padding-bottom: 8px;
   color: white;
 }
+
+/* Make project-list a horizontal scroll container */
 .project-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: row;
   gap: 20px;
- 
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
 }
 
 .project-list .project-item {
@@ -142,39 +146,54 @@ body{
   box-shadow: 0 4px 16px rgba(0,0,0,0.10);
   padding: 24px 20px;
   width: 260px;
+  min-width: 260px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   transition: box-shadow 0.3s;
+  box-sizing: border-box;
+  flex: 0 0 auto;
 }
 
 .project-list .project-item:hover {
   box-shadow: 0 8px 26px rgba(241, 253, 107, 0.6);
 }
+
 .project-image{
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   height: 200px;
   border-radius: 8px;
   margin-bottom: 0px;
+  object-fit: cover;
 }
+
 .pro-name{
-  padding-left: 71px;
+  padding-left: 0;
   font-size: 32px;
   color: #008eb5;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 100%;
+  text-align: center;
 }
+
 .pro-intro{
   font-size: 16px;
   color: #008eb5;
   margin-top: 0px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 100%;
+  text-align: center;
 }
+
 .button-group {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-top: auto;
+  width: 100%;
 }
+
 .demo-button, .code-button {
   font-size: 14px;
   background-color: #008eb5;
@@ -186,14 +205,32 @@ body{
   text-decoration: none;
   font-weight: bold;
 }
+
 .demo-button:hover, .code-button:hover {
   background-color: #64c5eb;
   color: #0c046c;
 }
+
 .pro-butt{
   color: white;
   text-decoration: none;
   font-weight: bold;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .project-list {
+    gap: 10px;
+    padding: 0 4px;
+  }
+  .project-list .project-item {
+    width: 90vw;
+    min-width: 90vw;
+    padding: 16px 8px;
+  }
+  .project-image {
+    height: 150px;
+  }
 }
 .Services {
   padding-top:6px;
