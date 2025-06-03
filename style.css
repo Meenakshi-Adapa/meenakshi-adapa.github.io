@@ -1,0 +1,65 @@
+/* General body styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  color: #222;
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 20px 40px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  border-radius: 12px;
+}
+
+/* Headings styles */
+h1 {
+  color: #1a1a1a;
+  font-size: 3em;
+  margin-bottom: 0.3em;
+  text-align: center;
+  text-shadow: none;
+}
+
+h2 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 0.6em;
+  text-align: center;
+}
+
+h3 {
+  color: #555;
+  font-size: 1.6em;
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 6px;
+}
+
+/* Ordered list styles */
+ol {
+  padding-left: 20px;
+  margin-bottom: 2em;
+  list-style-type: decimal-leading-zero;
+}
+
+/* List item link styles */
+ol li a {
+  text-decoration: none;
+  color: #007acc;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+ol li a:hover {
+  color: #005f99;
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+/* Add subtle hover effect on list items */
+ol li:hover {
+  background-color: rgba(0, 122, 204, 0.1);
+  border-radius: 6px;
+  padding-left: 6px;
+  transition: background-color 0.3s ease;
+}
