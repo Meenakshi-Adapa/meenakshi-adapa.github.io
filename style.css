@@ -55,11 +55,3 @@ ol li a:hover {
   transform: scale(1.05);
   text-decoration: underline;
 }
-
-/* Add subtle hover effect on list items */
-ol li:hover {
-  background-color: rgba(0, 122, 204, 0.1);
-  border-radius: 6px;
-  padding-left: 6px;
-  transition: background-color 0.3s ease;
-}
